@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+    --color-dark-navy: #1f314f;
+    --color-grey: #7d889e;
+    --color-light-grey: #d5e1ef;
+    --color-white: #ffffff;
+  }
+  
+  :root {
+    --size-heading: 1.375rem;
+    --size-body: 0.9375rem;
+    --len-bordrad-l: 1.25rem;
+    --len-bordrad-m: 0.625rem;
+    --len-l: 1.5rem;
+    --len-m: 1rem;
+  }
+  
+  /* css reset begins */
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  /* css reset ends */
+
+  /* selector css */
+
+  h1 {
+    color: var(--color-dark-navy);
+    font: 700 var(--size-heading) 'Outfit', sans-serif;
+  }
+
+  body {
+    background-color: var(--color-light-grey);
+    color: var(--color-grey);
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font: 400 var(--size-body) 'Outfit', sans-serif;
+  }
+  
+  /* class css */
+
+  .attribution {
+    display: none;
+  }
+
+  .card {
+    background-color: var(--color-white);
+    border-radius: var(--len-bordrad-l);
+    box-shadow: 0 25px 25px rgb(0 0 0 / 4.77%);
+    display: grid;
+    grid: auto-flow / 1fr;
+    padding: var(--len-m);
+    text-align: center;
+    width: 320px;
+  }
+
+  .card img {
+    border-radius: var(--len-bordrad-m);
+  }
+
+  .card-description {
+    margin: var(--len-l) 0;
+  }
+
+  .card-description p {
+    margin: var(--len-m);
+    margin-bottom: 0;
+  }
+
+  .img-qr-code {
+    width: 288px;
+  }
